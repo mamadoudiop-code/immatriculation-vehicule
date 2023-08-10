@@ -1,0 +1,25 @@
+name: Génération de Documentation
+
+on:
+  push:
+    branches:
+      - main  # la branche à surveiller
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install MkDocs
+        run: pip install mkdocs
+
+      - name: Build Documentation
+        run: mkdocs build
