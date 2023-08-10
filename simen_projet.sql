@@ -5,7 +5,7 @@
 -- Hôte : localhost:3306
 -- Généré le :  ven. 14 sep. 2018 à 11:50
 -- Version du serveur :  5.6.38
--- Version de PHP :  7.2.1
+-- Version de PHP :  7.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
